@@ -1,5 +1,5 @@
 NOM: esiee_simple_http_client;
-FONCTIONS_AUTORISEES: malloc; free; read; write; socket; connect; close; send; recv; gethostbyname;
+FONCTIONS_AUTORISEES: malloc; free; read; write; socket; connect; close; send; recv; gethostbyname; htons; htonl
 FICHIER_A_RENDDRE: esiee_simple_http_client.c
 NOM_DU_PROGRAMME: esiee_simple_http_client
 AIDE: man malloc; man free; man read; man write; man socket; man connect; man close; man send; man recv; man gethostbyname; https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol

@@ -1,8 +1,8 @@
 NOM: esiee_simple_network_client;
-FONCTIONS_AUTORISEES: malloc; free; write; send; socket; connect; inet_aton; atoi;
+FONCTIONS_AUTORISEES: malloc; free; write; send; socket; connect; inet_aton; atoi; htons; htonl;
 FICHIER_A_RENDDRE: esiee_simple_network_client.c
 NOM_DU_PROGRAMME: esiee_simple_network_client
-AIDE: man socket; man connect; man inet_aton; man nc;
+AIDE: man socket; man connect; man inet_aton; man nc; man les fonctions autorisees
 SUJET: Coder un programme qui prend en argument 2 parametres: le premier est l'adresse IP de destination (du server), le
 deuxieme est le port sur lequel votre programme devra se connecter.
 
