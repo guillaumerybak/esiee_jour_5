@@ -1,0 +1,14 @@
+NOM: esiee_simple_network_server;
+FONCTIONS_AUTORISEES: malloc; free; read; write; send; recv; socket; bind; listen; inet_aton; atoi;
+FICHIER_A_RENDDRE: esiee_simple_network_server.c
+NOM_DU_PROGRAMME: esiee_simple_network_server
+AIDE: man socket; man listen; man accept; man inet_aton; man send; man recv;
+SUJET: Coder un programme qui prend en argument 1 parametre: le port sur lequel il doit ecouter les nouvelles connexions.
+Votre programme fonctionnera de la maniere suivante: au lancement du programme, vous allez attendre qu'un client se connecte
+en TCP sur le port passe en parametre. Une fois le client connecte, vous devrez lire et afficher sur la sortie standard le 
+contenu qui vous est envoye. Ce sera du texte, d'une taille variable. Un fois la lecture terminee, il fermera la connexion
+initiee par le client.
+
+ex: dans un terminal, je lance "./esiee_simple_network_server 9999". dans un autre terminal, je lance "./esiee_simple_network_client 127.0.0.1 9999"
+Dans le terminal ou jai lance le serveur je devrais voir apparaitre Hello World. Dans l'autre je verrai le programme esiee_simple_network_client quitter.
+

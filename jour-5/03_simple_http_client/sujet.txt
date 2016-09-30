@@ -1,0 +1,23 @@
+NOM: esiee_simple_http_client;
+FONCTIONS_AUTORISEES: malloc; free; read; write; socket; connect; close; send; recv; gethostbyname;
+FICHIER_A_RENDDRE: esiee_simple_http_client.c
+NOM_DU_PROGRAMME: esiee_simple_http_client
+AIDE: man malloc; man free; man read; man write; man socket; man connect; man close; man send; man recv; man gethostbyname;
+SUJET: Coder un programme qui se connecte a sur un serveur HTTP dont on passe l'ip ou le nom de domaine en 1er parametre.
+
+
+ex: pour un GET sur le site internet perdu.com, vous devrez vous connecter sur l'IP correspondante a "perdu.com" sur le port 80,
+puis envoyer la chaine de caractere suivante: "GET / HTTP/1.1\r\nHost: perdu.com\r\nUser-Agent: curl/7.47.0\r\nAccept: */*\r\n\r\n".
+Le serveur devrait alors vous repondre du texte qui, une fois affiche dans votre terminal devrait ressembler a:
+
+HTTP/1.1 200 OK
+Date: Fri, 30 Sep 2016 05:24:42 GMT
+Server: Apache
+Last-Modified: Thu, 02 Jun 2016 06:01:08 GMT
+ETag: "cc-5344555136fe9"
+Accept-Ranges: bytes
+Content-Length: 204
+Vary: Accept-Encoding
+Content-Type: text/html
+
+<html><head><title>Vous Etes Perdu ?</title></head><body><h1>Perdu sur l'Internet ?</h1><h2>Pas de panique, on va vous aider</h2><strong><pre>    * <----- vous &ecirc;tes ici</pre></strong></body></html>

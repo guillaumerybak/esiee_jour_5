@@ -1,0 +1,26 @@
+NOM: esiee_simple_network_client;
+FONCTIONS_AUTORISEES: malloc; free; write; send; socket; connect; inet_aton; atoi;
+FICHIER_A_RENDDRE: esiee_simple_network_client.c
+NOM_DU_PROGRAMME: esiee_simple_network_client
+AIDE: man socket; man connect; man inet_aton; man nc;
+SUJET: Coder un programme qui prend en argument 2 parametres: le premier est l'adresse IP de destination (du server), le
+deuxieme est le port sur lequel votre programme devra se connecter.
+
+ex: un serveur (ip 192.168.1.12) sur votre reseau local ecoute sur le port 9999, nous devons pouvoir nous connecter dessus
+en lancant votre programme de la maniere suivante: ./esiee_simple_network_client 192.168.1.12 9999
+
+une foid lance, avec cette ligne de commande, votre programme devra envoyer la chaine de caractere "Hello World" au serveur
+sur lequel il est connecte.
+
+ex:
+dans un terminal, lancer la commande suivante: nc -l 9999
+cette commande va lancer un des utilitaire du systeme, nc (netcat) en mode "attente de connexion". Ce programme va attendre
+qu'un programme initie une connexion vers lui sur le port 9999, puis va afficher dans le terminal ce que ses clients lui envoient.
+Quand votre programme lui enverra "Hello World\n", il devrait afficher exactement le texte que vous avez envoye.
+
+dans un autre terminal, lancer la commande: ./esiee_simple_network_client 127.0.0.1 9999
+vous devez voir s'afficher dans le terminal dans lequel nc est lance la chaine de caractere "Hello World"
+suivie d'un retour a la ligne.
+
+Bon courage et n'hesitez pas a poser des questions si vous en avez !
+
