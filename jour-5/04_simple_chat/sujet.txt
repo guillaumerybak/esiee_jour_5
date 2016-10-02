@@ -1,0 +1,11 @@
+NOM: esiee_simple_chat;
+FONCTIONS_AUTORISEES: malloc; free; read; write; socket; connect; close; send; recv; gethostbyname; htons; htonl; select; printf; memset; memcpy;
+FICHIER_A_RENDDRE: esiee_simple_chat_client.c; esiee_simple_chat_server.c;
+NOM_DU_PROGRAMME: esiee_simple_chat_client;esiee_simple_chat_server;
+AIDE: man malloc; man free; man read; man write; man socket; man connect; man close; man send; man recv; man gethostbyname; man select; http://beej.us/guide/bgnet/output/html/singlepage/bgnet.html
+SUJET: En reprenant le client en le serveur que vous avez codé aujourd'hui et faire en sorte que le serveur accepte
+plusieurs clients en simultane. Utilisation de la fonction select obligatoire, threads interdits.
+En cas de gestion du mutli client correctement vous aurez 5 points bonus.
+Ensuite si vous arrivez a coder un chat simple (un client envoie un message et ensuite il est redistibué a tous les autres clients) vous aurez trois points de plus.
+Donc au total 8 points de plus possibles sur la journéé.
+Petit détail vous n'aurez vos points bonus que si vous avez fait un sans faute aux exos de la journée.

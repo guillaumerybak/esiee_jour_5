@@ -1,0 +1,21 @@
+
+EXO = esiee_simple_chat_server
+
+SRC := esiee_simple_chat_server.c
+
+OBJ = $(SRC:.c=.o)
+
+CFLAGS = -W -Wall -Wextra -I../../
+
+all: $(EXO)
+
+$(EXO): $(OBJ)
+	gcc -o $(EXO) $(OBJ)
+
+.PHONY: clean mrproper
+
+clean:
+	@rm -fv $(OBJ)
+
+mrproper: clean
+	@rm -fv $(EXO)
